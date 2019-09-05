@@ -1,0 +1,47 @@
+import random
+import math
+
+i = 0
+
+piyango_bilet_sayisi = int(input('Bu çekiliş için kaç bilet alacaksın ? : '))
+piyango_biletleri = []
+
+def piyago_bilet_olusturucu(bilet_adet):
+
+
+
+    bilet_uretici = int(random.randint(000000,999999))
+    piyango_biletleri.append(bilet_uretici)
+
+def show_lucky_tickets():
+    print("Senin şanslı biletlerin", piyango_biletleri)
+
+
+
+
+
+
+while i < piyango_bilet_sayisi:
+    piyago_bilet_olusturucu(piyango_bilet_sayisi)
+    i += 1
+
+
+show_lucky_tickets()
+a = 1
+
+while True:
+
+    şanslı_bilet = random.randint(000000, 999999)
+
+    if şanslı_bilet in piyango_biletleri:
+        print("KAZANDIN !!! - Deneme Sayısı {} | Kazanan Bilet ({}) | Senin Biletlerin ({})".format(a, şanslı_bilet, piyango_biletleri))
+
+
+
+        break
+    else :
+        print("Deneme Sayısı {} | Kazanan Bilet ({}) | Senin Biletlerin ({})".format(a,şanslı_bilet,piyango_biletleri))
+        a += 1
+
+
+
